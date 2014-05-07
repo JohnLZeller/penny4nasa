@@ -25,7 +25,7 @@ get_header(); ?>
 					<img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="0" height="0" border="0" />
 				</form>
 			</div>
-			<div class="paypal-method">
+			<div style="margin-bottom: 50px;" class="paypal-method">
 				<h3>Recurring Donations</h3>
 				<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 					<select name="os0">
@@ -44,8 +44,6 @@ get_header(); ?>
 					<input type="hidden" name="on0" value="" />
 				</form>
 			</div>
-		</div>
-		<div class="donate-method">
 			<h2 class="donate-method--title">via Snail Mail</h2>
 			<small>
 				We can also accept a check or money order made payable to <strong>Space Advocates</strong>. Please mail your donations to:
@@ -55,6 +53,37 @@ get_header(); ?>
 				PO Box 2035<br>
 				Corvallis, Oregon 97339-2035
 			</p>
+		</div>
+		<div class="donate-method">
+			<h2 class="donate-method--title">via Cryptocurrency</h2>
+			<h3>Bitcoin</h3>
+			<p class="address--mail">
+				<small>
+					Bitcoin is a secure and anonymous digital currency. Bitcoins are a safer and faster alternative to other donation methods.
+				</small>
+			</p>
+			<p class="address--mail">
+				<a style="padding-left: 6em;" class="coinbase-button" data-code="17be5c12e3124b3550d38f1afe5ced9a" data-button-style="custom_large" href="https://coinbase.com/checkouts/17be5c12e3124b3550d38f1afe5ced9a">Donate Bitcoins</a>
+			</p>
+			<h3>Dogecoin</h3>
+			<p class="address--mail">
+				<small>Dogecoin is a decentralized, peer-to-peer digital currency that enables you to easily send money online. Dogecoin users may send Doge to the following address:</small>
+			</p>
+			<p class="address--mail">
+				<a style="padding-left: 6em;" href="https://s3.amazonaws.com/SpaceAdvocatesImages/Dogecoin.png" target="_blank"><img style="max-width: 100px;" src="https://s3.amazonaws.com/SpaceAdvocatesImages/Dogecoin.png"></a>
+				DSawmZCuHUzMHHiXNju28efCC8TnmQEeCF
+			</p>
+			<h3>Litecoin</h3>
+			<p class="address--mail">
+				<small>Simillar to Bitcoin, Litecoin allows for fast and secure transactions worldwide, and has many exchanges which allow you to trade for Litecoins. Litecoin users may send Litecoin to the following address:</small>
+			</p>
+			<p class="address--mail">
+				<a style="padding-left: 6em;" href="https://s3.amazonaws.com/SpaceAdvocatesImages/Litecoin.png" target="_blank"><img style="max-width: 100px;" src="https://s3.amazonaws.com/SpaceAdvocatesImages/Litecoin.png"></a>
+				Lfdui3LGfi37tBQUfSMtyen3Z4EQzGUUHy
+			</p>
+
+		</div>
+		<div class="donate-method">
 		</div>
 		<?php
 			// Start the Loop.
@@ -67,5 +96,6 @@ get_header(); ?>
 		?>
 	</div>
 	<?php get_sidebar(); ?>
+	<script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
 <?php
 get_footer();
